@@ -6,8 +6,8 @@ if n > NUMBER_LIMIT:
     print('Неверное количество символов')
 else:
      for i in range(n):
-          number = abs(int(input(f'Число #{i + 1} = ')))
-          if number > NUMBER_LIMIT: 
+          number = int(input(f'Число #{i + 1} = '))
+          if abs(number) > NUMBER_LIMIT: 
                print('Превышен допустимы диапазон')
                break
           numberArray.append(number)
